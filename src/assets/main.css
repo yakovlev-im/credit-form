@@ -1,0 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    .double {
+        @apply grid grid-cols-1 sm:grid-cols-2 gap-x-5
+    }
+}
+
+.formkit-outer[data-type="multi-step"] > .formkit-wrapper {
+    @apply max-w-screen-md mx-auto
+}
